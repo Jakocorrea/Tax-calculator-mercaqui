@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Jakocorrea/Tax-calculator-mercaqui",
+  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && touch dist/.nojekyll",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

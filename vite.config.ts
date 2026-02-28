@@ -6,7 +6,9 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/Tax-calculator-mercaqui/',
+    // IMPORTANT: Set this to your repository name, e.g., '/my-repo-name/'
+    // If you are using a custom domain or username.github.io, set it to '/'
+    base: process.env.NODE_ENV === 'production' ? './' : '/',
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
