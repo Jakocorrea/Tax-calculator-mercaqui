@@ -2,27 +2,31 @@
 
 A professional tool for calculating product profitability, tax obligations (IVA/IBUA), and optimal pricing strategies based on Colombian tax regulations.
 
-## ⚠️ CRITICAL: Why you see a "White Page"
-If you simply upload these files to GitHub and turn on GitHub Pages, **it will not work**. You will see a white page. This is because browsers cannot run `.tsx` files directly. 
+## 🛑 STOP! READ THIS IF YOU SEE A BLANK PAGE 🛑
 
-**You MUST build the app first.** You have two ways to do this:
+If you are uploading files manually to GitHub, you **CANNOT** just upload the files and expect it to work. Browsers do not understand the code in this folder (React/TypeScript).
 
-### Option 1: The "Automatic" Way (Recommended)
-1. Upload all these files to your GitHub repository.
-2. Go to your repository **Settings** > **Pages**.
-3. Under **Build and deployment** > **Source**, change it to **"GitHub Actions"**.
-4. GitHub will now automatically build and publish your app. Wait 2 minutes and it will be live.
+### The ONLY way to fix the blank page:
 
-### Option 2: The "Manual" Way (Uploading the 'dist' folder)
-1. On your computer, open a terminal in this folder.
-2. Run `npm install` and then `npm run build`.
-3. A new folder named **`dist`** will appear.
-4. **ONLY upload the contents of the `dist` folder** to your GitHub repository.
-5. In **Settings** > **Pages**, set the source to your branch and folder `/ (root)`.
+1. **Upload ALL these files** to your GitHub repository.
+2. Go to your repository **Settings** (on the top menu of GitHub).
+3. Click on **Pages** (on the left sidebar).
+4. Under **Build and deployment** > **Source**, click the dropdown and select **"GitHub Actions"**.
+5. **Wait 2-3 minutes.** GitHub will now run the "Build" process automatically.
+6. Refresh your site. It will work.
 
 ---
 
-## 🚀 Deployment Steps
+## 🚀 Manual Build (If you don't want to use GitHub Actions)
+If you want to upload the files yourself:
+1. Run `npm run build` on your computer.
+2. Open the **`dist`** folder.
+3. Upload **ONLY the files inside `dist`** to your GitHub repository.
+4. Set the Pages source to **"Deploy from a branch"**.
+
+---
+
+## 🛠 Features
 
 ### 1. Initialize Git and Push to GitHub
 1. Create a new repository on GitHub (e.g., `tax-price-manager`).
