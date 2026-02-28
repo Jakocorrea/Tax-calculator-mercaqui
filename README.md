@@ -13,7 +13,7 @@ If you are uploading files manually to GitHub, you **CANNOT** just upload the fi
 3. Click on **Pages** (on the left sidebar).
 4. Under **Build and deployment** > **Source**, click the dropdown and select **"GitHub Actions"**.
 5. **Wait 2-3 minutes.** GitHub will now run the "Build" process automatically.
-6. Refresh your site. It will work.
+6. Refresh your site. It will work. lol
 
 ---
 
