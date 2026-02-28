@@ -2,27 +2,27 @@
 
 A professional tool for calculating product profitability, tax obligations (IVA/IBUA), and optimal pricing strategies based on Colombian tax regulations.
 
-## 🛑 STOP! READ THIS IF YOU SEE A BLANK PAGE 🛑
+## 🛑 CHECKLIST FOR SUCCESS (If you see a Blank Page) 🛑
 
-If you are uploading files manually to GitHub, you **CANNOT** just upload the files and expect it to work. Browsers do not understand the code in this folder (React/TypeScript).
+If your site is blank and you see a **404 error for main.tsx**, it means you haven't enabled the "Build" process on GitHub. Follow these 3 steps exactly:
 
-### The ONLY way to fix the blank page:
+### Step 1: Enable GitHub Actions
+1. Go to your repository on GitHub.com.
+2. Click on **Settings** (top menu).
+3. Click on **Pages** (left sidebar).
+4. Under **Build and deployment** > **Source**, you **MUST** select **"GitHub Actions"** from the list. 
+   *(If it says "Deploy from a branch", it will NOT work).*
 
-1. **Upload ALL these files** to your GitHub repository.
-2. Go to your repository **Settings** (on the top menu of GitHub).
-3. Click on **Pages** (on the left sidebar).
-4. Under **Build and deployment** > **Source**, click the dropdown and select **"GitHub Actions"**.
-5. **Wait 2-3 minutes.** GitHub will now run the "Build" process automatically.
-6. Refresh your site. It will work. lol
+### Step 2: Check the Build Progress
+1. Click on the **Actions** tab at the top of your GitHub page.
+2. You should see a workflow named **"Deploy to GitHub Pages"**.
+3. Click on it. You should see two circles: **build** and **deploy**.
+4. Wait until both circles turn **Green** ✅.
 
----
-
-## 🚀 Manual Build (If you don't want to use GitHub Actions)
-If you want to upload the files yourself:
-1. Run `npm run build` on your computer.
-2. Open the **`dist`** folder.
-3. Upload **ONLY the files inside `dist`** to your GitHub repository.
-4. Set the Pages source to **"Deploy from a branch"**.
+### Step 3: Refresh your Site
+1. Once the circles are green, go back to your site URL.
+2. Press `Ctrl + F5` (or `Cmd + Shift + R` on Mac) to force a refresh.
+3. The app will now appear!
 
 ---
 
